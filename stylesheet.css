@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    min-height: 100vh;
+    background-color: #94a3b8;
+    color: #0f172a;
+}
+
+.header{
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    font-size: xx-large;
+}
+
+dialog{
+    margin: auto;
+    width: 400px;
+    height: 450px;
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-size: x-large;
+    border-radius: 12px;
+}
+
+dialog *{
+    margin-top: 2px;
+}
+
+.one,
+.two,
+.three{
+    display: flex;
+    justify-content: space-between;
+}
+
+::backdrop{
+    background-color: #666;
+    opacity: 0.75;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 5px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    grid-row: 2;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 5px;
+    align-items: center;
+    padding: 15px 20px;
+    height: 250px;
+    background-color: #334155;
+    color: #f8fafc;
+    font-size: x-large;
+    border-radius: 12px;
+}
+
+.card:hover
+{
+    box-shadow: 3px 5px 3px whitesmoke;
+}
+
+.card *{
+    margin-top: 3px;
+}
+
+.card button,
+.header button,
+dialog button{
+    background-color:#0f172a;
+    color: #f8fafc;
+    border: 1px solid #0f172a;
+    font-size: large;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+dialog button:hover,
+#addnew:hover,
+#del:hover,
+#switch:hover{
+    font-size: large;
+    background-color: #f8fafc;
+    color: #0f172a;
+    border: 1px solid #f8fafc;
+    box-shadow: 1px 3px 2px #334155;
+}
+
+.header button{
+    margin-left: 26px;
+}
